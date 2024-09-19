@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission</title>
+</head>
+
+<body>
+
+    <h2>Registration Form</h2>
+
+    <form action="process_form.php" method="post" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female" required>
+        <label for="female">Female</label><br><br>
+
+        <label for="picture">Choose a picture:</label>
+        <input type="file" id="picture" name="picture" required><br><br>
+
+        <label for="skills">Skills:</label><br>
+        <input type="checkbox" id="web" name="skills[]" value="Web Programming">
+        <label for="web">Web Programming</label><br>
+        <input type="checkbox" id="mobile" name="skills[]" value="Mobile Programming">
+        <label for="mobile">Mobile Programming</label><br>
+        <input type="checkbox" id="desktop" name="skills[]" value="Desktop Programming">
+        <label for="desktop">Desktop Programming</label><br>
+        <input type="checkbox" id="ml" name="skills[]" value="ML Programming">
+        <label for="ml">ML Programming</label><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+</body>
+
+</html>
